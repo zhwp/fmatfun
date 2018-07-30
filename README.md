@@ -1,1 +1,2 @@
 # fmatfun
+Flexible matlab functions
