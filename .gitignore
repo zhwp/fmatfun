@@ -1,2 +1,8 @@
 *.eps
 *.asv
+fig
+eps
+tmpfun
+matdata
+matfile
+matstr
