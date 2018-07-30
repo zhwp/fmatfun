@@ -1,2 +1,2 @@
-# fmatfun
-Flexible matlab functions
+## 介绍
+fmatfun 是一个灵活易用的Matlab函数工具集合，通过将平常经常使用的功能进行封装形成，涉及到作图、数据、文本、文件等，编写目的是提高使用Matlab的效率。
