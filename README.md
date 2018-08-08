@@ -42,3 +42,5 @@ xlabel('index'); ylabel('amplitude');
 legend(plines,{'line 1','line 2','line 3'});
 set_fig_fontsize(fig_rndlines,14);
 ```
+![tmp](doc/demo/fig1.eps)
+![tmp](doc/demo/fig1.png)
