@@ -16,6 +16,7 @@ Currently, the following components are available.
 
 ## Usage at a glance
 ```Matlab
+% demo/matfig_multilines_demo
 %% Plot multiple lines;多条曲线作图
 % Use random number to simulate the lines;用随机数模拟多条曲线
 rng(0);
