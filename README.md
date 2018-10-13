@@ -70,5 +70,6 @@ fig_rndlines_new = figure;
 copy_and_zoom_ax(fig_rndlines,fig_rndlines_new,[],[400 600],[200 300],'rectangle','-');
 ```
 <center class="half">
-<img src = "doc/demo/lines.png" width="300" /> <img src = "doc/demo/lines_zoom.png" width="300" />
+<img src = "doc/demo/lines.png" width="500" />
+<img src = "doc/demo/lines_zoom.png" width="500" />
 </center>
