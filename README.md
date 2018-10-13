@@ -5,9 +5,8 @@
 ## Introducation
 Fmatfun is a flexible Matlab function set which integrates the daily-used programs involving figure, data, text and file. It devotes to improve the efficiency of using Matlab and producing materials for writing scientific reports.
 
-Currently, the following components are available.
+Currently, the following functions are available.
 * [matfig](matfig) functions for figures
-* [matstr](matstr) functions for translating variables to strings
 * [demo](demo) demos for how to use fmatfun
     
 
@@ -71,6 +70,5 @@ fig_rndlines_new = figure;
 copy_and_zoom_ax(fig_rndlines,fig_rndlines_new,[],[400 600],[200 300],'rectangle','-');
 ```
 <center class="half">
-<img src = "doc/demo/lines.png" width="300" />
-<img src = "doc/demo/lines_zoom.png" width="300" />
+<img src = "doc/demo/lines.png" width="300" /> <img src = "doc/demo/lines_zoom.png" width="300" />
 </center>
