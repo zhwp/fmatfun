@@ -1,9 +1,9 @@
 function [fig_out,p_lines,p_lines_marker,p_lines_legend] = plotfig(x,y,x_m,y_m,line_type,marker,color,line_width)
-%% PLOTFIG plot multiple lines
+%% PLOTFIG plot multiple lines by three layers
 % Input:
 % x,y are the input data of the lines
 % x_m, y_m are a subset of x,y where the markers will display. If they are
-% empty, 15 points will be selected from x,y.
+% empty, about 15 points will be selected from x,y.
 % line_type, marker, color, line_width custom the appearance of the lines,
 % if they do not exist or are empty, defaults settting will be used.
 % Output:

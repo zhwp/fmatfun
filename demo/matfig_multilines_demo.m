@@ -1,3 +1,5 @@
+%% Plot multiple lines and zoom in of the figure
+% 多条曲线作图与图像放大
 %% Plot multiple lines;多条曲线作图
 % Use random number to simulate the lines;用随机数模拟多条曲线
 rng(0);
@@ -23,7 +25,7 @@ xlabel('index'); ylabel('amplitude');
 legend(plines,{'line 1','line 2','line 3'});
 set_fig_fontsize(fig_rndlines,14);
 
-%% 对图的局部进行放大
+%% Zoom in the figure; 对图的局部进行放大
 % 用随机数模拟多条靠得比较近的曲线
 rng(0);
 M = 3; N = 1500;
@@ -33,9 +35,10 @@ y = cumsum(rand(M,N),2);
 xlabel('index'); ylabel('amplitude');
 legend(plines,{'line 1','line 2','line 3'});
 set_fig_fontsize(fig_rndlines,14);
+% Zoom in and plot in the same figure; 放大并显示在同一幅图上
 copy_and_zoom_ax(fig_rndlines,[],[0.2 0.6 0.35 0.30],[400 600],[200 300],'rectangle','-');
 
-% 局部放大图画在新图上
+% Zoom in and plot in a new figure; 放大并显示在新的图上
 rng(0);
 M = 3; N = 1500;
 x = 1:N;
