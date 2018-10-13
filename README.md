@@ -1,6 +1,6 @@
 ![Fmatfun logo](doc/logo/fmatfun.png)
 
-![Release version](https://img.shields.io/badge/release-v1.0.0-blue.svg)
+![Release version](https://img.shields.io/badge/release-v0.1.0-blue.svg)
 ## Flexible matlab functions
 ## Introducation
 Fmatfun is a flexible Matlab function set which integrates the daily-used programs involving figure, data, text and file. It devotes to improve the efficiency of using Matlab and producing materials for writing scientific reports.
@@ -9,6 +9,7 @@ Currently, the following components are available.
 * [matfig](matfig) functions for figures
 * [matstr](matstr) functions for translating variables to strings
 * [demo](demo) demos for how to use fmatfun
+    
 
 ## Installation
 * Download fmatfun
@@ -17,6 +18,8 @@ Currently, the following components are available.
 ## Usage at a glance
 ```Matlab
 % demo/matfig_multilines_demo
+%% Plot multiple lines and zoom in of the figure
+% 多条曲线作图与图像放大
 %% Plot multiple lines;多条曲线作图
 % Use random number to simulate the lines;用随机数模拟多条曲线
 rng(0);
@@ -41,6 +44,33 @@ set_fig_fontsize(fig_rndlines,14);
 xlabel('index'); ylabel('amplitude');
 legend(plines,{'line 1','line 2','line 3'});
 set_fig_fontsize(fig_rndlines,14);
+
+%% Zoom in the figure; 对图的局部进行放大
+% 用随机数模拟多条靠得比较近的曲线
+rng(0);
+M = 3; N = 1500;
+x = 1:N;
+y = cumsum(rand(M,N),2);
+[fig_rndlines,~,~,plines] = plotfig(x,y);
+xlabel('index'); ylabel('amplitude');
+legend(plines,{'line 1','line 2','line 3'});
+set_fig_fontsize(fig_rndlines,14);
+% Zoom in and plot in the same figure; 放大并显示在同一幅图上
+copy_and_zoom_ax(fig_rndlines,[],[0.2 0.6 0.35 0.30],[400 600],[200 300],'rectangle','-');
+
+% Zoom in and plot in a new figure; 放大并显示在新的图上
+rng(0);
+M = 3; N = 1500;
+x = 1:N;
+y = cumsum(rand(M,N),2);
+[fig_rndlines,~,~,plines] = plotfig(x,y);
+xlabel('index'); ylabel('amplitude');
+legend(plines,{'line 1','line 2','line 3'});
+set_fig_fontsize(fig_rndlines,14);
+fig_rndlines_new = figure;
+copy_and_zoom_ax(fig_rndlines,fig_rndlines_new,[],[400 600],[200 300],'rectangle','-');
 ```
-![tmp](doc/demo/fig1.eps)
-![tmp](doc/demo/fig1.png)
+<center class="half">
+<img src = "doc/demo/lines.png" width="300" />
+<img src = "doc/demo/lines_zoom.png" width="300" />
+</center>
