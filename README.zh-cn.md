@@ -3,7 +3,7 @@
 ![Release version](https://img.shields.io/badge/release-v0.1.0-blue.svg)
 ## Flexible matlab functions
 ## 介绍
-fmatfun 是一个灵活易用的Matlab函数集，通过将日常使用的功能进行封装形成，涉及到图像、数据、文本、文件等，编写目的是提高使用Matlab和生成科技报告写作材料的效率。
+Fmatfun 是一个灵活易用的Matlab函数集，通过将日常使用的功能进行封装形成，涉及到图像、数据、文本、文件等，编写目的是提高使用Matlab和生成科技报告写作材料的效率。
 
 fmatfun中的大多数功能只需要一到几行代码便可实现。fmatfun各模块根据功能组织，可重用性高，基于fmatfun的二次开发也相当便捷。
 
