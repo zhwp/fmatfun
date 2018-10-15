@@ -1,4 +1,7 @@
 function [line_data]=fig2mat_line(filename,saveopt)
+%% FIG2MAT_LINE fetch the data from the .fig file
+% filename, input file
+% saveopt, if it is 1 or ture, the line data will be stored.
 if ~exist('filename','var')
     [FileName,PathName] = uigetfile('.fig','´ò¿ªfigÍ¼');
     filename=[PathName,FileName];

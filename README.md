@@ -5,6 +5,9 @@
 ## Introducation
 Fmatfun is a flexible Matlab function set which integrates the daily-used programs involving figure, data, text and file. It devotes to improve the efficiency of using Matlab and producing materials for writing scientific reports.
 
+Most of the features of fmatfun are achieved by merely one to several lines of code. The modules of fmatfun are arranged based on the features, which is of high reusability. Secondary development based on fmatfun is rather convenient. 
+
+
 Currently, the following functions are available.
 * [matfig](matfig) functions for figures
 * [demo](demo) demos for how to use fmatfun
@@ -13,7 +16,9 @@ Currently, the following functions are available.
 ## Installation
 * Download fmatfun
 * Run [install.m](install.m) in Matlab 
-
+## Documentation
+* English(doc/fmatfun.pdf)
+* [简体中文](doc/fmatfun.zh-cn.pdf)
 ## Usage at a glance
 ```Matlab
 % demo/matfig_multilines_demo

@@ -1,5 +1,9 @@
+*.fig
 *.eps
 *.asv
+*.tex
+*.sty
+*-to.pdf
 fig
 eps
 tmpfun

@@ -5,6 +5,8 @@
 ## 介绍
 fmatfun 是一个灵活易用的Matlab函数集，通过将日常使用的功能进行封装形成，涉及到图像、数据、文本、文件等，编写目的是提高使用Matlab和生成科技报告写作材料的效率。
 
+fmatfun中的大多数功能只需要一到几行代码便可实现。fmatfun各模块根据功能组织，可重用性高，基于fmatfun的二次开发也相当便捷。
+
 目前，可使用的函数如下。
 * [matfig](matfig) 用于作图的函数
 * [demo](demo) fmatfun使用范例
@@ -12,7 +14,9 @@ fmatfun 是一个灵活易用的Matlab函数集，通过将日常使用的功能
 ## 安装
 * 下载 fmatfun
 * 在Matlab中运行 [install.m](install.m)  
-
+## 文档
+* English(doc/fmatfun.pdf)
+* [简体中文](doc/fmatfun.zh-cn.pdf)
 ## 用法一览
 ```Matlab
 % demo/matfig_multilines_demo
