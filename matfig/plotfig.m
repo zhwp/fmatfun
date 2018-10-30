@@ -54,6 +54,9 @@ if isempty(x_m) || isempty(y_m)
         y_m = y(idx,:);
     end
 end
+if isempty(idx)
+    idx = 1;
+end
 p_lines_marker = plot(x_m,y_m);
 if dim == 1
     p_lines_legend= plot(x(idx(1)),y(:,idx(1)));
